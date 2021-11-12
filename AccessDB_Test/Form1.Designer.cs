@@ -30,16 +30,17 @@ namespace AccessDB_Test
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnLoad = new System.Windows.Forms.Button();
+            this.btnDBLoad = new System.Windows.Forms.Button();
             this.tboxPath = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tboxQuery = new System.Windows.Forms.TextBox();
             this.btnEx3 = new System.Windows.Forms.Button();
             this.btnEx2 = new System.Windows.Forms.Button();
             this.btnEx1 = new System.Windows.Forms.Button();
-            this.tboxQuery = new System.Windows.Forms.TextBox();
             this.btnExe = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgData = new System.Windows.Forms.DataGridView();
+            this.OFDialog = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -48,7 +49,7 @@ namespace AccessDB_Test
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnLoad);
+            this.groupBox1.Controls.Add(this.btnDBLoad);
             this.groupBox1.Controls.Add(this.tboxPath);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
@@ -57,14 +58,15 @@ namespace AccessDB_Test
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "가져오기";
             // 
-            // btnLoad
+            // btnDBLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(572, 25);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(75, 25);
-            this.btnLoad.TabIndex = 1;
-            this.btnLoad.Text = "DB Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnDBLoad.Location = new System.Drawing.Point(572, 25);
+            this.btnDBLoad.Name = "btnDBLoad";
+            this.btnDBLoad.Size = new System.Drawing.Size(75, 25);
+            this.btnDBLoad.TabIndex = 1;
+            this.btnDBLoad.Text = "DB Load";
+            this.btnDBLoad.UseVisualStyleBackColor = true;
+            this.btnDBLoad.Click += new System.EventHandler(this.btnDBLoad_Click);
             // 
             // tboxPath
             // 
@@ -86,6 +88,14 @@ namespace AccessDB_Test
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "조회";
             // 
+            // tboxQuery
+            // 
+            this.tboxQuery.Location = new System.Drawing.Point(7, 50);
+            this.tboxQuery.Multiline = true;
+            this.tboxQuery.Name = "tboxQuery";
+            this.tboxQuery.Size = new System.Drawing.Size(640, 166);
+            this.tboxQuery.TabIndex = 3;
+            // 
             // btnEx3
             // 
             this.btnEx3.Location = new System.Drawing.Point(582, 16);
@@ -94,6 +104,7 @@ namespace AccessDB_Test
             this.btnEx3.TabIndex = 2;
             this.btnEx3.Text = "예제3";
             this.btnEx3.UseVisualStyleBackColor = true;
+            this.btnEx3.Click += new System.EventHandler(this.btnEx_Click);
             // 
             // btnEx2
             // 
@@ -103,6 +114,7 @@ namespace AccessDB_Test
             this.btnEx2.TabIndex = 1;
             this.btnEx2.Text = "예제2";
             this.btnEx2.UseVisualStyleBackColor = true;
+            this.btnEx2.Click += new System.EventHandler(this.btnEx_Click);
             // 
             // btnEx1
             // 
@@ -112,14 +124,7 @@ namespace AccessDB_Test
             this.btnEx1.TabIndex = 0;
             this.btnEx1.Text = "예제1";
             this.btnEx1.UseVisualStyleBackColor = true;
-            // 
-            // tboxQuery
-            // 
-            this.tboxQuery.Location = new System.Drawing.Point(7, 50);
-            this.tboxQuery.Multiline = true;
-            this.tboxQuery.Name = "tboxQuery";
-            this.tboxQuery.Size = new System.Drawing.Size(640, 166);
-            this.tboxQuery.TabIndex = 3;
+            this.btnEx1.Click += new System.EventHandler(this.btnEx_Click);
             // 
             // btnExe
             // 
@@ -129,6 +134,7 @@ namespace AccessDB_Test
             this.btnExe.TabIndex = 4;
             this.btnExe.Text = "실행";
             this.btnExe.UseVisualStyleBackColor = true;
+            this.btnExe.Click += new System.EventHandler(this.btnExe_Click);
             // 
             // groupBox3
             // 
@@ -149,6 +155,10 @@ namespace AccessDB_Test
             this.dgData.RowTemplate.Height = 27;
             this.dgData.Size = new System.Drawing.Size(640, 256);
             this.dgData.TabIndex = 0;
+            // 
+            // OFDialog
+            // 
+            this.OFDialog.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -174,7 +184,7 @@ namespace AccessDB_Test
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnDBLoad;
         private System.Windows.Forms.TextBox tboxPath;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnEx3;
@@ -184,6 +194,7 @@ namespace AccessDB_Test
         private System.Windows.Forms.Button btnExe;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dgData;
+        private System.Windows.Forms.OpenFileDialog OFDialog;
     }
 }
 
