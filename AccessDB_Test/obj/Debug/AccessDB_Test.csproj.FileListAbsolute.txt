@@ -8,3 +8,4 @@ D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.csproj.Generat
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.csproj.CoreCompileInputs.cache
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.exe
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.pdb
+D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.csproj.ResolveComReference.cache

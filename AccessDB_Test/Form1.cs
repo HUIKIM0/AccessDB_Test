@@ -55,8 +55,8 @@ From Voca";
         {
             string strFilePath = string.Empty;
 
-            OFDialog.InitialDirectory = Application.StartupPath;    //프로그램 파일 위치
-            OFDialog.FileName = "*.mdb";
+            OFDialog.InitialDirectory = Application.StartupPath;    //파일 위치한 경로
+            OFDialog.FileName = "*.mdb";                           // 파일경로\\사용자가 저장할때 쓴 이름.mdb
             OFDialog.Filter = "db files (*.mdb)|*.mdb|All files (*.*)|*.*";
 
             if (OFDialog.ShowDialog() == DialogResult.OK)
@@ -108,5 +108,31 @@ Order By ID DESC";
             tboxQuery.Text = strQuery;
         }
 
+
+        //Excel Export 버튼
+        // DataGrideView에 보여진 Data를 Excel로 저장
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            SFDialog.InitialDirectory = Application.StartupPath;   
+            SFDialog.FileName = "*.xls";
+            SFDialog.Filter = "xls files (*.xls)|*.elx|All files (*.*)|*.*";
+
+            if(SFDialog.ShowDialog() == DialogResult.OK)
+            {
+                ExcelExe excel = new ExcelExe();  //class 선언
+
+                string strFilePath = SFDialog.FileName;           
+                DataTable dt = dgData.DataSource as DataTable;
+
+
+                ExcelExe.enExportType enType = ExcelExe.enExportType.EXCEL_COM;      //enum
+               //ExcelExe.enExportType enType = ExcelExe.enExportType.OLEDB_EXCEL;
+               //ExcelExe.enExportType enType = ExcelExe.enExportType.CSV_STREAM;
+
+                string strRet = excel.ExcelExport(strFilePath, dt, enType);
+                MessageBox.Show(strRet);
+
+            }
+        }
     }
 }

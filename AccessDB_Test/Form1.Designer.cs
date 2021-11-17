@@ -41,6 +41,8 @@ namespace AccessDB_Test
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgData = new System.Windows.Forms.DataGridView();
             this.OFDialog = new System.Windows.Forms.OpenFileDialog();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.SFDialog = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -160,11 +162,22 @@ namespace AccessDB_Test
             // 
             this.OFDialog.FileName = "openFileDialog1";
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(486, 316);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(101, 28);
+            this.btnExport.TabIndex = 6;
+            this.btnExport.Text = "Excel Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 642);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnExe);
             this.Controls.Add(this.groupBox2);
@@ -195,6 +208,8 @@ namespace AccessDB_Test
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dgData;
         private System.Windows.Forms.OpenFileDialog OFDialog;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.SaveFileDialog SFDialog;
     }
 }
 
