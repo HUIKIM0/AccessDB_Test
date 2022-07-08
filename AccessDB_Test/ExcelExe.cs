@@ -110,7 +110,7 @@ namespace AccessDB_Test
             }
 
             return strRet;   //메소드 작업을 마치고 종료할 때 성공/실패 text를 호출한 곳으로 가지고 돌아감
-                             // void면 메소드 작업을 마치고 종료할 때 메소드를 호출했던 곳으로 안 돌아감
+                            
         }
 
         // 생성한 Object를 삭제 함

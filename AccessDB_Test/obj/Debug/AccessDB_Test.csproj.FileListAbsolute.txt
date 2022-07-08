@@ -1,7 +1,6 @@
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\bin\Debug\AccessDB_Test.exe.config
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\bin\Debug\AccessDB_Test.exe
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\bin\Debug\AccessDB_Test.pdb
-D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.csprojAssemblyReference.cache
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.Form1.resources
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.Properties.Resources.resources
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.csproj.GenerateResource.cache
@@ -9,3 +8,4 @@ D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.csproj.CoreCom
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.exe
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.pdb
 D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.csproj.ResolveComReference.cache
+D:\dev\C#Work\AccessDB_Test\AccessDB_Test\obj\Debug\AccessDB_Test.csproj.AssemblyReference.cache
